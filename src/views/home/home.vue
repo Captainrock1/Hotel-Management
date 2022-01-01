@@ -30,16 +30,17 @@
   </section>
 </template>
 
+
 <style scoped>
   .box {
-    display: block;
-    background-color: lightgrey;
-    width: 750px;
-    border: 5px solid green;
-    padding: 40px;
-    margin: 20px;
-    }
-  .h1 {
-    text-align:center;
+  background-color: lightgrey;
+  width: 750px;
+  border: 5px solid green;
+  padding: 40px;
+  margin: 20px auto;
+  
   }
+.h1 {
+  text-align:center;
+}
 </style>
