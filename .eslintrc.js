@@ -51,7 +51,7 @@ module.exports = {
         sourceType: 'module',
         tsconfigRootDir: __dirname,
         project: [
-          './tsconfig.json'
+          './packages/*/tsconfig.json'
         ]
       },
       plugins: [
@@ -60,7 +60,11 @@ module.exports = {
       rules: {
         'no-redeclare': 'off',
         'no-undef': 'off',
-        'no-useless-constructor': 'off'
+        'no-useless-constructor': 'off',
+        '@typescript-eslint/array-type': ['error', {
+          default: 'generic',
+          readonly: 'generic'
+        }]
       }
     },
     {
@@ -69,7 +73,13 @@ module.exports = {
         'plugin:vue/vue3-essential',
         '@vue/standard',
         '@vue/typescript/recommended'
-      ]
+      ],
+      rules: {
+        '@typescript-eslint/array-type': ['error', {
+          default: 'generic',
+          readonly: 'generic'
+        }]
+      }
     }
   ]
 }

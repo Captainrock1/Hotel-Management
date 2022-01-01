@@ -1,0 +1,22 @@
+{
+  "name": "@monorepo-template/backend",
+  "version": "1.0.0",
+  "private": true,
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p ./tsconfig.json",
+    "dev": "node dist/index.js",
+    "watch": "nodemon",
+    "serve:ts-node": "ts-node src/index.ts",
+    "kill-port": "npx kill-port 3000"
+  },
+  "dependencies": {
+    "@monorepo-template/common": "*",
+    "dotenv": "^10.0.0",
+    "fastify": "^3.24.1",
+    "fastify-autoload": "^3.9.0",
+    "fastify-cors": "^6.0.2",
+    "fastify-helmet": "^5.3.2"
+  }
+}
