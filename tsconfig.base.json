@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "esnext",
+    "moduleResolution": "Node",
+    "strict": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "lib": [
+      "esnext",
+      "dom"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "@monorepo-template/*": ["packages/*/src"]
+    },
+    "declaration": true,
+    "declarationMap": true,
+    "pretty": true,
+  },
+  "exclude": [
+    "node_modules/",
+    "dist/",
+    "lib/",
+    ".*/**"
+  ]
+}
