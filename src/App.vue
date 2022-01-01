@@ -9,7 +9,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: hsla(171, 68%, 66%, 0.988);
+  color: hsla(315, 66%, 49%, 0.988);
   margin-top: 60px;
 }
 </style>
